@@ -12,6 +12,10 @@ import { EducationComponent } from './education/education.component';
 import { AdditionalSkillsComponent } from './additional-skills/additional-skills.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ObserveElementDirective } from './directives/observe-element.directive';
+import { HardSkillComponent } from './hard-skills/hard-skill/hard-skill.component';
+import { TitleComponent } from './components/title/title.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,10 +29,14 @@ import { ContactsComponent } from './contacts/contacts.component';
     EducationComponent,
     AdditionalSkillsComponent,
     LanguagesComponent,
-    ContactsComponent
+    ContactsComponent,
+    ObserveElementDirective,
+    HardSkillComponent,
+    TitleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

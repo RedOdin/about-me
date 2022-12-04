@@ -1,0 +1,27 @@
+.shift-bottom-appearance {
+  opacity: 0;
+  transform: translate(0, 100%);
+
+  &.active {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.shift-right-appearance {
+  opacity: 0;
+  transform: translate(50%, 0);
+
+  &.active {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.appearance {
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+}

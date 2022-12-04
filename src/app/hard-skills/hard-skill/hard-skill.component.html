@@ -1,0 +1,17 @@
+<a class="hard-skill"
+   [href]="path"
+   target="_blank"
+   cvObserveElement
+   #intersection="intersection">
+  <fa-icon *ngIf="icon"
+           [icon]="icon"
+           class="skill-icon"
+           [style.color]="iconColor"></fa-icon>
+  <div class="progress-container">
+    <div class="progress-title">{{title}}</div>
+    <div class="progressbar">
+      <div class="progressbar-fill"
+           [style.width.%]="intersection.intersecting ? progress : 0"></div>
+    </div>
+  </div>
+</a>

@@ -1,3 +1,11 @@
-<header>
-  <cv-nav-link title="Hard Skills"></cv-nav-link>
+<header class="container"
+        cvObserveElement
+        #intersection="intersection"
+        [class.active]="intersection.intersecting">
+  <cv-nav-link title="Skills" link="#hard-skills"></cv-nav-link>
+  <cv-nav-link title="Experience" link="#experience"></cv-nav-link>
+  <cv-nav-link title="Education" link="#education"></cv-nav-link>
+  <cv-nav-link title="Additional Skills" link="#additional-skills"></cv-nav-link>
+  <cv-nav-link title="Languages" link="#languages"></cv-nav-link>
+  <cv-nav-link title="Contacts" link="#contacts"></cv-nav-link>
 </header>

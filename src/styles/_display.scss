@@ -1,0 +1,10 @@
+@import "variables";
+
+.container {
+  padding: 0 5rem;
+}
+
+.content-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
