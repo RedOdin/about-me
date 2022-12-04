@@ -1,0 +1,84 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+
+.soft-skills {
+  padding: 5rem 3rem;
+  background-color: $main-white;
+  border-radius: 1rem;
+
+  .title {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .skills-container {
+    height: 300px;
+    position: relative;
+
+    .soft-skill {
+      position: absolute;
+      transition: transform 0.3s ease-out;
+
+      &:nth-child(1) {
+        top: 45%;
+        left: 8%;
+      }
+
+      &:nth-child(2) {
+        top: 11%;
+        left: 41%;
+      }
+
+      &:nth-child(3) {
+        top: 14%;
+        left: 74%;
+      }
+
+      &:nth-child(4) {
+        top: 73%;
+        left: 29%;
+      }
+
+      &:nth-child(5) {
+        top: 52%;
+        left: 39%;
+      }
+
+      &:nth-child(6) {
+        top: 7%;
+        left: 18%;
+      }
+
+      &:nth-child(7) {
+        top: 64%;
+        left: 64%;
+      }
+
+      &:nth-child(8) {
+        top: 82%;
+        left: 49%;
+      }
+
+      &:nth-child(9) {
+        top: 29%;
+        left: 53%;
+      }
+
+      &:nth-child(10) {
+        top: -23%;
+        left: 35%;
+      }
+
+      &:nth-child(11) {
+        top: -17%;
+        left: 66%;
+      }
+
+      &:nth-child(12) {
+        top: 41%;
+        left: 73%;
+      }
+    }
+  }
+}

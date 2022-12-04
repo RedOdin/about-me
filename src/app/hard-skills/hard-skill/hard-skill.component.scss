@@ -18,10 +18,6 @@ $card-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 7px 7px rgba(0, 0, 0, 0.22);
     }
   }
 
-  &:focus {
-    box-shadow: $card-shadow;
-  }
-
   .skill-icon {
     font-size: 2.5rem;
     width: 60px;

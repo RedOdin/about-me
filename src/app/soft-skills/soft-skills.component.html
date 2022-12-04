@@ -1,1 +1,11 @@
-<p>soft-skills works!</p>
+<div class="container">
+  <div class="content-container soft-skills">
+    <cv-title class="title" title="Soft Skills"></cv-title>
+    <div class="skills-container">
+      <ng-container *ngFor="let skill of softSkills">
+        <cv-soft-skill class="soft-skill"
+                       [skill]="skill"></cv-soft-skill>
+      </ng-container>
+    </div>
+  </div>
+</div>

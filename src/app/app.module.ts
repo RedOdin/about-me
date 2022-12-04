@@ -16,6 +16,7 @@ import { ObserveElementDirective } from './directives/observe-element.directive'
 import { HardSkillComponent } from './hard-skills/hard-skill/hard-skill.component';
 import { TitleComponent } from './components/title/title.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SoftSkillComponent } from './soft-skills/soft-skill/soft-skill.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContactsComponent,
     ObserveElementDirective,
     HardSkillComponent,
-    TitleComponent
+    TitleComponent,
+    SoftSkillComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+
+.soft-skill {
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  background-color: $main-green;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $main-white;
+  transition: transform 0.3s linear;
+  white-space: nowrap;
+}

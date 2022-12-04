@@ -8,7 +8,7 @@ import { Observable, debounceTime, Subscription } from 'rxjs';
 export class ObserveElementDirective implements OnInit, OnDestroy {
   @Input() public root: HTMLElement | null = null;
   @Input() public rootMargin = '0px';
-  @Input() public threshold = 1;
+  @Input() public threshold = 0.8;
   @Input() public debounceTime = 0;
   @Input() public isContinuous = false;
 
