@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgOptimizedImage } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -38,7 +39,8 @@ import { SoftSkillComponent } from './soft-skills/soft-skill/soft-skill.componen
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]

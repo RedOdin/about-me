@@ -1,1 +1,30 @@
-<p>education works!</p>
+<div class="container">
+  <div class="education content-container">
+    <div class="img-container">
+      <img ngSrc="assets/bsuir.jpeg" height="500" width="700">
+      <div class="img-mask"
+           cvObserveElement
+           [threshold]="0.5"
+           #intersection="intersection"
+           [debounceTime]="300"
+           [class.active]="intersection.intersecting"></div>
+    </div>
+    <div class="education-info">
+      <cv-title title="Education"></cv-title>
+      <div class="main-education-info">
+        <div class="speciality"><span class="main-green">Computer Science</span> and Software Engineering Programme</div>
+        <div class="university">Belarusian State University of Informatics and Radioelectronics</div>
+        <div class="period-container main-green">
+          <div>09/2016 - 07/2020</div>
+          <div>Belarus, Minsk</div>
+        </div>
+        <div class="education-mask"
+             cvObserveElement
+             [threshold]="0.5"
+             #intersection="intersection"
+             [debounceTime]="300"
+             [class.active]="intersection.intersecting"></div>
+      </div>
+    </div>
+  </div>
+</div>
