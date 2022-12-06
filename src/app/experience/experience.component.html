@@ -1,1 +1,28 @@
-<p>experience works!</p>
+<div class="experience-background">
+
+</div>
+<div class="experience-container parallax-effect content-container container">
+  <div class="experience-card shift-left-appearance"
+       cvObserveElement
+       [threshold]="0.2"
+       #intersection1="intersection"
+       [class.active]="intersection1.intersecting">
+    <div class="company-name">
+      Itransition Group
+    </div>
+  </div>
+  <div class="experience-card card-right shift-right-appearance"
+       cvObserveElement
+       [threshold]="0.2"
+       #intersection2="intersection"
+       [class.active]="intersection2.intersecting">
+
+  </div>
+  <div class="experience-card shift-left-appearance"
+       cvObserveElement
+       [threshold]="0.2"
+       #intersection3="intersection"
+       [class.active]="intersection3.intersecting">
+
+  </div>
+</div>

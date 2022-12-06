@@ -1,8 +1,11 @@
 <a class="hard-skill"
    [href]="path"
+   (mouseenter)="isHovered = true"
+   (mouseleave)="isHovered = false"
    target="_blank"
    cvObserveElement
-   #intersection="intersection">
+   #intersection="intersection"
+   [style.boxShadow]="isHovered ? boxShadow : 'none'">
   <fa-icon *ngIf="icon"
            [icon]="icon"
            class="skill-icon"

@@ -13,13 +13,13 @@
     text-decoration: none;
     position: relative;
     padding: 0 2.5rem;
+    white-space: nowrap;
 
     .underline {
       position: absolute;
       height: 1px;
       background-color: $main;
       width: 0;
-      right: 0;
       top: calc(50% + 1px);
       right: 2.5rem;
     }

@@ -3,4 +3,18 @@
 :host {
   font-family: "Belleza", sans-serif;
   color: #121C42;
+
+  .parallax {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 100px;
+    scroll-behavior: smooth;
+  }
+}
+
+.z-index-5 {
+  z-index: 5;
 }

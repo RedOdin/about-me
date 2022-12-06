@@ -1,11 +1,13 @@
-<div class="hard-skills container content-container">
-  <cv-title class="title" title="Hard Skills"></cv-title>
-  <ng-container *ngFor="let hardSkill of hardSkills">
-    <cv-hard-skill class="hard-skill"
-                   [icon]="hardSkill.icon"
-                   [progress]="hardSkill.progress"
-                   [title]="hardSkill.title"
-                   [path]="hardSkill.path"
-                   [iconColor]="hardSkill.iconColor"></cv-hard-skill>
-  </ng-container>
+<div class="container bg-white">
+  <div class="hard-skills content-container">
+    <cv-title class="title" title="Hard Skills"></cv-title>
+    <ng-container *ngFor="let hardSkill of hardSkills">
+      <cv-hard-skill class="hard-skill"
+                     [icon]="hardSkill.icon"
+                     [progress]="hardSkill.progress"
+                     [title]="hardSkill.title"
+                     [path]="hardSkill.path"
+                     [iconColor]="hardSkill.iconColor"></cv-hard-skill>
+    </ng-container>
+  </div>
 </div>

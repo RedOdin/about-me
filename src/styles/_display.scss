@@ -8,3 +8,16 @@
   max-width: $content-width;
   margin: 0 auto;
 }
+
+.position-relative {
+  position: relative;
+}
+
+.bg-white {
+  background: white;
+}
+
+.parallax-effect {
+  position: relative;
+  transform-style: preserve-3d;
+}

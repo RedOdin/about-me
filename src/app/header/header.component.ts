@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'cv-header',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  public downloadIcon = faArrowDown;
 }
