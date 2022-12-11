@@ -14,7 +14,6 @@
     backdrop-filter: blur(0.25rem);
     border-radius: 1rem;
     transition: 0.5s ease-out;
-    opacity: 1;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -86,4 +85,5 @@
   background-size: cover;
   position: absolute;
   box-shadow: inset 0 7rem 3.5rem 1.5rem white, inset 0 -7rem 3.5rem 1.5rem white;
+  opacity: 0.2;
 }

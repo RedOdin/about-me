@@ -3,6 +3,18 @@
 
 .container {
   padding: 0 5rem;
+
+  @media (max-width: $screen-lg) {
+    padding: 0 4rem;
+  }
+
+  @media (max-width: $screen-md) {
+    padding: 0 2.5rem;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 0 1rem;
+  }
 }
 
 .content-container {
@@ -25,4 +37,24 @@
 
 .main-green {
   color: $main-green;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex-sm {
+  @media (max-width: $screen-sm) {
+    display: flex;
+  }
+}
+
+.d-none-sm {
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
 }

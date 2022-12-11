@@ -1,4 +1,5 @@
 @import "src/styles/colors";
+@import "src/styles/variables";
 
 :host {
   height: 100%;
@@ -14,6 +15,18 @@
     position: relative;
     padding: 0 2rem;
     white-space: nowrap;
+
+    @media (max-width: $screen-xl) {
+      padding: 0 1.5rem;
+    }
+
+    @media (max-width: $screen-lg) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: $screen-md) {
+      display: none;
+    }
 
     .underline {
       position: absolute;

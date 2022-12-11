@@ -1,0 +1,15 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+
+footer {
+  height: 100px;
+  background-color: $main-green;
+
+  .content-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    justify-content: flex-end;
+  }
+}

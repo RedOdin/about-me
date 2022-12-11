@@ -20,6 +20,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SoftSkillComponent } from './soft-skills/soft-skill/soft-skill.component';
 import { IconLinkComponent } from './components/icon-link/icon-link.component';
 import { PersonalProjectComponent } from './experience/personal-project/personal-project.component';
+import { ContactComponent } from './contacts/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PersonalProjectComponent } from './experience/personal-project/personal
     TitleComponent,
     SoftSkillComponent,
     IconLinkComponent,
-    PersonalProjectComponent
+    PersonalProjectComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<a class="icon-link"
+   *ngIf="this.iconLink"
+   [href]="this.iconLink.path"
+   (mouseenter)="isHovered = true"
+   (mouseleave)="isHovered = false"
+   target="_blank">
+  <fa-icon [icon]="this.iconLink.icon"
+           [style.color]="isHovered ? iconLink.iconColor : 'white'"
+           class="icon"></fa-icon>
+</a>

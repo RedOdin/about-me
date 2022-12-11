@@ -1,6 +1,12 @@
+@import "src/styles/variables";
+
 h2 {
   font-weight: 700;
   font-size: 3.5rem;
   margin: 0;
   transition: 0.5s ease-out;
+
+  @media (max-width: $screen-sm) {
+    font-size: 2.75rem;
+  }
 }

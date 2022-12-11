@@ -17,6 +17,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: $screen-sm) {
+      font-size: 1.75rem;
+      width: 45px;
+    }
   }
 
   .progress-container {
@@ -36,6 +41,10 @@
       background-color: $peach-light;
       border-radius: 2rem;
       position: relative;
+
+      @media (max-width: $screen-sm) {
+        height: 8px;
+      }
 
       .progressbar-fill {
         background-color: $peach;

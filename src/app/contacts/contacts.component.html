@@ -1,1 +1,6 @@
-<p>contacts works!</p>
+<footer class="container">
+  <div class="content-container">
+    <cv-contact *ngFor="let contact of contacts"
+                [iconLink]="contact"></cv-contact>
+  </div>
+</footer>

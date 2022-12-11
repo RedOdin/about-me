@@ -11,24 +11,37 @@
              #intersection="intersection"
              [class.active]="intersection.intersecting">Anton</div>
       </div>
+      <div class="position shift-bottom-appearance"
+           cvObserveElement
+           #intersectionPosition="intersection"
+           [class.active]="intersectionPosition.intersecting">Frontend Developer</div>
       <div class="summary shift-bottom-appearance"
            cvObserveElement
            #intersection="intersection"
            [class.active]="intersection.intersecting">
-        Experienced software engineer with a passion for developing innovative programs that expedite the
+        <span class="summary-details">Experienced software engineer with a passion for developing innovative programs that expedite the
         efficiency and effectiveness of organizational success. Well-versed in technology and writing code to
-        create systems that are reliable and user-friendly.
+        create systems that are reliable and user-friendly.</span>
+        <div class="abstract-animation-container d-none d-flex-sm">
+          <ng-container *ngTemplateOutlet="abstractAnimation"></ng-container>
+        </div>
       </div>
     </div>
-    <div class="abstract-animation appearance"
-         cvObserveElement
-         #intersection="intersection"
-         [class.active]="intersection.intersecting">
-      <div class="first-circle circle"></div>
-      <div class="second-circle circle"></div>
-      <div class="line-container">
-        <div class="small-circle"></div>
-      </div>
+    <div class="abstract-animation-container d-flex d-none-sm">
+      <ng-container *ngTemplateOutlet="abstractAnimation"></ng-container>
     </div>
   </div>
 </div>
+
+<ng-template #abstractAnimation>
+  <div class="abstract-animation appearance"
+       cvObserveElement
+       #intersection="intersection"
+       [class.active]="intersection.intersecting">
+    <div class="first-circle circle"></div>
+    <div class="second-circle circle"></div>
+    <div class="line-container">
+      <div class="small-circle"></div>
+    </div>
+  </div>
+</ng-template>

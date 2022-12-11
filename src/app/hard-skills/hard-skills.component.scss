@@ -4,6 +4,10 @@
 .container {
   box-shadow: 0rem 3rem 1.5rem white;
 
+  @media (max-width: $screen-sm) {
+    box-shadow: 0rem 2rem 1rem white;
+  }
+
   .hard-skills {
     display: flex;
     flex-wrap: wrap;
@@ -12,13 +16,31 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 
+    @media (max-width: $screen-sm) {
+      row-gap: 0.5rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
     .hard-skill {
       width: calc(33.3% - 0.67rem);
+
+      @media (max-width: $screen-lg) {
+        width: calc(50% - 1rem);
+      }
+
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
     }
 
     .title {
       width: 100%;
       margin-bottom: 2rem;
+
+      @media (max-width: $screen-sm) {
+        margin: 0;
+      }
     }
   }
 }
