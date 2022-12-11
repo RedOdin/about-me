@@ -10,7 +10,7 @@
     column-gap: 4rem;
 
     .img-container {
-      width: 400px;
+      width: 350px;
       height: 500px;
       position: relative;
       display: flex;
@@ -19,11 +19,18 @@
       border-radius: 0.5rem;
       filter: invert(1);
       box-shadow: 20px 20px $peach-light;
+      flex-shrink: 0;
+
+      .ratio-container {
+        width: 700px;
+        height: 500px;
+        position: absolute;
+      }
 
       .img-mask {
-        position: absolute;
         height: 100%;
         width: 100%;
+        position: absolute;
         border-radius: 0.5rem;
         filter: none;
         transition: 0.5s ease-out;

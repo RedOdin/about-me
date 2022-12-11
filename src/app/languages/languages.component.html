@@ -1,1 +1,41 @@
-<p>languages works!</p>
+<div class="container">
+  <div class="content-container">
+    <img class="english-img appearance"
+         src="assets/english.png"
+         alt="english"
+         cvObserveElement
+         #intersectionImg="intersection"
+         [class.active]="intersectionImg.intersecting">
+    <div class="english-info">
+      <div class="english-level-container">
+        <cv-title title="English"></cv-title>
+        <div class="english-level appearance"
+             cvObserveElement
+             #intersection="intersection"
+             [class.active]="intersection.intersecting">Intermediate+</div>
+      </div>
+      <ul>
+        <li class="title shift-right-appearance"
+            cvObserveElement
+            [threshold]="0.2"
+            #intersection1="intersection"
+            [class.active]="intersection1.intersecting">It's not a problem.</li>
+        <li class="title shift-right-appearance"
+            cvObserveElement
+            [threshold]="0.2"
+            #intersection2="intersection"
+            [class.active]="intersection2.intersecting">I can communicate with native speakers.</li>
+        <li class="title shift-right-appearance"
+            cvObserveElement
+            [threshold]="0.2"
+            #intersection3="intersection"
+            [class.active]="intersection3.intersecting">I can express my opinion.</li>
+        <li class="title shift-right-appearance"
+            cvObserveElement
+            [threshold]="0.2"
+            #intersection4="intersection"
+            [class.active]="intersection4.intersecting">I can chat freely.</li>
+      </ul>
+    </div>
+  </div>
+</div>

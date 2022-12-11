@@ -1,0 +1,21 @@
+<div class="personal-project-container">
+  <div class="personal-project-info">
+    <div class="personal-project">
+      <span>Boom</span>
+      <span class="mark">Personal project</span>
+    </div>
+    <div class="description">
+      <i>An entertaining game coded on React Native. In the game, you need to answer the question faster so as not to explode and not lose.</i>
+    </div>
+    <div class="tech-stack-container">
+      <div class="tech-stack">Tech stack: </div>
+      <cv-icon-link *ngFor="let tech of BoomStack"
+                    [iconLink]="tech"></cv-icon-link>
+    </div>
+  </div>
+  <div class="boom-background">
+    <img class="boom-img first" src="assets/personal-projects/boom-screen2.svg" alt="menu">
+    <img class="boom-img second" src="assets/personal-projects/boom-screen1.svg" alt="settings">
+    <img class="boom-img third" src="assets/personal-projects/boom-screen3.svg" alt="game">
+  </div>
+</div>

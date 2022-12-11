@@ -1,0 +1,46 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+
+.container {
+  background-color: $main-white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .content-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .english-img {
+      width: 400px;
+      transition: 0.5s ease-out;
+    }
+
+    .english-info {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      flex-grow: 1;
+
+      .english-level-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .english-level {
+          font-weight: 700;
+          font-size: 2rem;
+          color: $main-green;
+          transition: 0.5s ease-out;
+        }
+      }
+
+      .title {
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        margin-top: 0.5rem;
+        font-size: 2rem;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
+}

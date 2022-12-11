@@ -10,23 +10,76 @@
 
   .experience-card {
     width: 80%;
-    height: 200px;
-    background: rgba(253, 248, 245, 0.7);
-    backdrop-filter: blur(3px);
+    background: rgba(253, 248, 245, 0.8);
+    backdrop-filter: blur(0.25rem);
     border-radius: 1rem;
     transition: 0.5s ease-out;
     opacity: 1;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 
     &.card-right {
       align-self: end;
+    }
+
+    &.personal-project {
+      width: auto;
+    }
+
+    .company {
+      display: flex;
+      justify-content: space-between;
+
+      .company-name {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      .company-position {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .company-period {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        color: $main-green;
+        align-items: flex-end;
+
+        .part-time {
+          font-weight: 400;
+          color: $main;
+        }
+      }
+    }
+
+    .list-items {
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      li:not(:first-child) {
+        margin-top: 0.5rem;
+      }
+    }
+
+    .tech-stack-container {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+
+      .tech-stack {
+        font-size: 2rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
     }
   }
 }
 
 .experience-background {
-  height: calc(600px + 2rem);
+  height: calc(800px + 2rem);
   width: 100%;
   transform: translateZ(-100px) scale(2);
   background-image: url("~src/assets/code.webp");

@@ -1,15 +1,27 @@
-<div class="experience-background">
-
-</div>
+<div class="experience-background"></div>
 <div class="experience-container parallax-effect content-container container">
   <div class="experience-card shift-left-appearance"
        cvObserveElement
        [threshold]="0.2"
        #intersection1="intersection"
        [class.active]="intersection1.intersecting">
-    <div class="company-name">
-      Itransition Group
-      implementation and improvements of an architecture  angular application
+    <div class="company">
+      <div class="company-info">
+        <div class="company-name">Itransition Group</div>
+        <div class="company-position">Software Engineer</div>
+      </div>
+      <div class="company-period">08/2020 - Present</div>
+    </div>
+    <ul class="list-items">
+      <li>Implementation and improvements of an architecture angular application</li>
+      <li>Development of new Angular + .Net features</li>
+      <li>Estimation of new tasks and their decomposition</li>
+      <li>Communication with clients and designers</li>
+    </ul>
+    <div class="tech-stack-container">
+      <div class="tech-stack">Tech stack: </div>
+      <cv-icon-link *ngFor="let tech of ItransitionStack"
+                    [iconLink]="tech"></cv-icon-link>
     </div>
   </div>
   <div class="experience-card card-right shift-right-appearance"
@@ -17,13 +29,33 @@
        [threshold]="0.2"
        #intersection2="intersection"
        [class.active]="intersection2.intersecting">
-
+    <div class="company">
+      <div class="company-info">
+        <div class="company-name">Remdev Studio</div>
+        <div class="company-position">Software Engineer</div>
+      </div>
+      <div class="company-period">
+        <span>09/2021 - 03/2022</span>
+        <span class="part-time"><i>Part-time job</i></span>
+      </div>
+    </div>
+    <ul class="list-items">
+      <li>Lead developer of the project</li>
+      <li>Development of new Angular + Ionic features</li>
+      <li>Estimation of new tasks and their decomposition</li>
+      <li>Communication with clients and designers</li>
+    </ul>
+    <div class="tech-stack-container">
+      <div class="tech-stack">Tech stack: </div>
+      <cv-icon-link *ngFor="let tech of NozomiStack"
+                    [iconLink]="tech"></cv-icon-link>
+    </div>
   </div>
-  <div class="experience-card shift-left-appearance"
+  <div class="experience-card shift-left-appearance personal-project"
        cvObserveElement
        [threshold]="0.2"
        #intersection3="intersection"
        [class.active]="intersection3.intersecting">
-
+    <cv-personal-project></cv-personal-project>
   </div>
 </div>

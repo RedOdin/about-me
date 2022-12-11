@@ -1,0 +1,73 @@
+@import "src/styles/variables";
+@import "src/styles/colors";
+
+.personal-project-container {
+  display: flex;
+  column-gap: 3rem;
+
+  .personal-project-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+
+    .personal-project {
+      font-size: 3rem;
+      font-weight: 700;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+
+      .mark {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $main-green;
+      }
+    }
+
+    .description {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 2rem 0;
+      width: 80%;
+    }
+
+    .tech-stack-container {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+
+      .tech-stack {
+        font-size: 2rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .boom-background {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 40%;
+    height: 500px;
+    position: relative;
+
+    .boom-img {
+      height: 100%;
+      border-radius: 1rem;
+      position: absolute;
+      left: 25%;
+      top: 7%;
+
+      &.first {
+        box-shadow: -16px 12px 4px $main;
+        transform: rotateZ(-20deg) translate(-30%, -5%);
+      }
+
+      &.third {
+        transform: rotateZ(20deg) translate(30%, -5%);
+      }
+    }
+  }
+}

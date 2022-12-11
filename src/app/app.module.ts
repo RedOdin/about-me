@@ -18,6 +18,8 @@ import { HardSkillComponent } from './hard-skills/hard-skill/hard-skill.componen
 import { TitleComponent } from './components/title/title.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SoftSkillComponent } from './soft-skills/soft-skill/soft-skill.component';
+import { IconLinkComponent } from './components/icon-link/icon-link.component';
+import { PersonalProjectComponent } from './experience/personal-project/personal-project.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { SoftSkillComponent } from './soft-skills/soft-skill/soft-skill.componen
     ObserveElementDirective,
     HardSkillComponent,
     TitleComponent,
-    SoftSkillComponent
+    SoftSkillComponent,
+    IconLinkComponent,
+    PersonalProjectComponent
   ],
   imports: [
     BrowserModule,
