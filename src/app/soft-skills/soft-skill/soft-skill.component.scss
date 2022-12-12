@@ -11,4 +11,14 @@
   color: $main-white;
   transition: transform 0.3s linear;
   white-space: nowrap;
+
+  @media (max-width: $screen-lg) {
+    padding: 1rem 1rem;
+  }
+
+  @media (max-width: $screen-md) {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
 }

@@ -7,10 +7,22 @@
     background-color: $main-white;
     border-radius: 1rem;
 
+    @media (max-width: $screen-md) {
+      padding: 5rem 3rem 3rem 2rem;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 5rem 4rem 3rem 1rem;
+    }
+
     .title {
       width: 100%;
       margin-bottom: 1rem;
       display: block;
+
+      @media (max-width: $screen-md) {
+        transform: translate(0, -3.5rem);
+      }
     }
 
     .skills-container {

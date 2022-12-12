@@ -5,6 +5,10 @@ footer {
   height: 100px;
   background-color: $main-green;
 
+  @media (max-width: $screen-sm) {
+    height: 80px;
+  }
+
   .content-container {
     height: 100%;
     display: flex;

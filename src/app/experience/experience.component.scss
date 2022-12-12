@@ -18,8 +18,20 @@
     flex-direction: column;
     padding: 2rem;
 
+    @media (max-width: $screen-md) {
+      width: auto;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 2rem 1rem;
+    }
+
     &.card-right {
       align-self: end;
+
+      @media (max-width: $screen-md) {
+        align-self: stretch;
+      }
     }
 
     &.personal-project {
@@ -29,15 +41,29 @@
     .company {
       display: flex;
       justify-content: space-between;
+      position: relative;
 
       .company-name {
         font-size: 3rem;
         font-weight: 700;
+        white-space: nowrap;
+
+        @media (max-width: $screen-md) {
+          font-size: 2.5rem;
+        }
+
+        @media (max-width: $screen-sm) {
+          font-size: 2rem;
+        }
       }
 
       .company-position {
         font-size: 2rem;
         font-weight: 700;
+
+        @media (max-width: $screen-md) {
+          font-size: 1.5rem;
+        }
       }
 
       .company-period {
@@ -46,6 +72,13 @@
         font-weight: 700;
         color: $main-green;
         align-items: flex-end;
+        white-space: nowrap;
+
+        @media (max-width: $screen-sm) {
+          transform: translate(0, -1rem);
+          position: absolute;
+          right: 0;
+        }
 
         .part-time {
           font-weight: 400;
@@ -57,9 +90,14 @@
     .list-items {
       font-size: 1.5rem;
       font-weight: 700;
+      padding-inline-start: 2rem;
 
       li:not(:first-child) {
         margin-top: 0.5rem;
+      }
+
+      @media (max-width: $screen-md) {
+        font-size: 1.25rem;
       }
     }
 
@@ -67,11 +105,24 @@
       display: flex;
       align-items: center;
       column-gap: 0.5rem;
+      flex-wrap: wrap;
+
+      @media (max-width: $screen-md) {
+        column-gap: 0.25rem;
+      }
+
+      @media (max-width: $screen-sm) {
+        line-height: 1;
+      }
 
       .tech-stack {
         font-size: 2rem;
         font-weight: 700;
         white-space: nowrap;
+
+        @media (max-width: $screen-md) {
+          font-size: 1.5rem;
+        }
       }
     }
   }

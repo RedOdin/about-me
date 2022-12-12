@@ -4,12 +4,24 @@
 .personal-project-container {
   display: flex;
   column-gap: 3rem;
+  height: 500px;
+  align-items: center;
+
+  @media (max-width: $screen-md) {
+    height: auto;
+    flex-direction: column;
+  }
 
   .personal-project-info {
     display: flex;
     flex-direction: column;
     width: 60%;
+    height: 100%;
     justify-content: space-between;
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
 
     .personal-project {
       font-size: 3rem;
@@ -18,11 +30,20 @@
       display: flex;
       align-items: center;
 
+      @media (max-width: $screen-md) {
+        font-size: 2.5rem;
+      }
+
       .mark {
         font-size: 1.5rem;
         font-weight: 600;
         color: $main-green;
         margin-right: 2rem;
+
+        @media (max-width: $screen-md) {
+          font-size: 1.25rem;
+          margin-right: 0;
+        }
       }
     }
 
@@ -31,6 +52,15 @@
       font-weight: 500;
       margin: 2rem 0;
       width: 80%;
+
+      @media (max-width: $screen-md) {
+        font-size: 1.75rem;
+      }
+
+      @media (max-width: $screen-sm) {
+        font-size: 1.5rem;
+        width: 100%;
+      }
     }
 
     .tech-stack-container {
@@ -42,6 +72,10 @@
         font-size: 2rem;
         font-weight: 700;
         white-space: nowrap;
+
+        @media (max-width: $screen-md) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -51,8 +85,26 @@
     flex-direction: column;
     row-gap: 1rem;
     width: 40%;
-    height: 500px;
+    height: 100%;
     position: relative;
+
+    @media (max-width: $screen-xl) {
+      height: 80%;
+    }
+
+    @media (max-width: $screen-lg) {
+      height: 60%;
+    }
+
+    @media (max-width: $screen-md) {
+      height: 400px;
+      margin-top: 2rem;
+      width: 100%;
+    }
+
+    @media (max-width: $screen-sm) {
+      height: 270px;
+    }
 
     .boom-img {
       height: 100%;
@@ -61,17 +113,33 @@
       left: 25%;
       top: 7%;
 
+      @media (max-width: $screen-md) {
+        left: 50%;
+      }
+
       &.first {
         box-shadow: -16px 12px 4px $main;
         transform: rotateZ(-20deg) translate(-30%, -5%);
+
+        @media (max-width: $screen-md) {
+          transform: rotateZ(-20deg) translate(-80%, -5%);
+        }
       }
 
       &.second {
         transform: translate(0, -2%);
+
+        @media (max-width: $screen-md) {
+          transform: translate(-50%, -2%);
+        }
       }
 
       &.third {
         transform: rotateZ(20deg) translate(30%, -5%);
+
+        @media (max-width: $screen-md) {
+          transform: rotateZ(20deg) translate(-20%, -5%);
+        }
       }
     }
   }

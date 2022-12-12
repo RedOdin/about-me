@@ -5,9 +5,20 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
 
+  @media (max-width: $screen-md) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .education {
     display: flex;
     column-gap: 4rem;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column-reverse;
+      row-gap: 2rem;
+      align-items: center;
+    }
 
     .img-container {
       width: 350px;
@@ -21,9 +32,14 @@
       box-shadow: 20px 20px $peach-light;
       flex-shrink: 0;
 
+      @media (max-width: $screen-sm) {
+        width: 270px;
+        height: 400px;
+      }
+
       .ratio-container {
-        width: 700px;
-        height: 500px;
+        width: 200%;
+        height: 100%;
         position: absolute;
       }
 
@@ -62,11 +78,24 @@
           margin-top: 1rem;
           font-weight: 800;
           font-size: 2.5rem;
+
+          @media (max-width: $screen-md) {
+            font-size: 2rem;
+            margin-top: 0;
+          }
+
+          @media (max-width: $screen-sm) {
+            font-size: 1.75rem;
+          }
         }
 
         .university {
           font-weight: 600;
           font-size: 2rem;
+
+          @media (max-width: $screen-md) {
+            font-size: 1.5rem;
+          }
         }
 
         .period-container {
